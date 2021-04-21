@@ -282,3 +282,25 @@
   });
 
 })();
+
+// document.onkeypress = function (e) {
+//   e = e || window.event;
+
+//   if (e.keyCode === 13) {
+
+//     document.documentElement.classList.toggle('dark-mode');
+//     document.querySelectorAll('.invarted').forEach((result) =>{
+//       result.classList.toggle('invert')
+//     })
+    
+//   }
+// }
+var icon = document.getElementById("icon");
+icon.onclick = function(){
+  document.documentElement.classList.toggle('dark-mode');
+    document.querySelectorAll('.invarted').forEach((result) =>{
+      result.classList.toggle('invert')
+    })
+    
+
+}
